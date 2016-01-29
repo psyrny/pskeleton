@@ -4,7 +4,7 @@ My nette sandbox
 Installation
 --------------
 ###Clone:
-	$ git clone git@github.com:psyrny/pskeleton.git
+	$ git clone https://github.com/psyrny/pskeleton.git
 
 ###Install npm packages
 	$ npm install
