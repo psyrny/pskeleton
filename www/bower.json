@@ -1,0 +1,35 @@
+{
+  "name": "pskeleton-bower",
+  "authors": [
+    "Petr Syrny (petrsyrny.cz)"
+  ],
+  "description": "Default sandbox package",
+  "main": [
+    "css/dist-main.css",
+    "js/dist-main.js"
+  ],
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.5.0",
+    "datatables": "^1.10.10",
+    "datatables-plugins": "^1.10.10",
+    "datatables-responsive": "^2.0.1",
+    "tooltip": "*",
+    "metisMenu": "^2.4.0",
+    "bootstrap-social": "^4.12.0"
+  }
+}

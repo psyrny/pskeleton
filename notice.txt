@@ -1,0 +1,85 @@
+
+1) instalace npm 
+	- package.json (vytvori se node_modules) 
+	- npm install (v adresari projektu), npm update
+	- [https://www.npmjs.com/] a natahnou se zavislosti pro balicky
+2) composer 
+	- composer create-project nette/web-project - nainstaluje default projekt nette (todo *.bat soubor pro automaticke vytvoreni)
+	- composer.json (nástroj na správu závislostí v PHP)
+	- composer update (instalace)
+	- https://packagist.org/packages/nette/nette
+	- [https://getcomposer.org/], [https://packagist.org/]
+3) bower 
+	- sprava frontend balicku a knihoven
+	- bower.json (nastroj pro spravu frontend yavislosti balicku - jquery, bootstrap...) [http://bower.io/search/]
+4) gulp 
+	- definice automatickych uloh
+	- gulpfile.js (task manager - minifikace, concate, uglify...) [http://gulpjs.com/]
+
+
+
+NPM
+-----
+
+Pokud existuje v projektu package.json, tak spustit pouze - npm install (natahnou se vsechny data)
+
+
+https://www.npmjs.com/
+https://docs.npmjs.com/misc/scripts
+
+
+Pro interaktivni tvorbu package.json projektu
+
+npm init
+
+
+Prida do package.json zavislost pro gulp = task manager (dependencies)
+
+npm install gulp --save
+
+npm install gulp-watch --save
+
+
+Prida zavislost do devDependencies - (pro develop)
+
+npm install gulp --save-dev
+npm install gulp-autoprefixer -- save-dev
+npm install gulp-cssmin --save-dev
+npm install gulp-less --save-dev
+npm install gulp-livereload --save-dev
+npm install gulp-load-plugins --save-dev
+npm install gulp-minify-html --save-dev (deprecated)
+npm install gulp-htmlmin --save-dev
+npm install gulp-rename --save-dev
+npm install gulp-svgmin --save-dev
+npm install gulp-uglify --save-dev
+
+
+Pomocnik pro vysvetleni package.json
+http://browsenpm.org/package.json#scripts
+
+
+Mozne volat script primo pro urcitou akci: 
+
+npm run-script start (spusti gulp a watch)
+
+  "scripts": {
+    "start": "gulp && gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+
+
+
+COMPOSER NEBO BOWER
+-------------------
+http://www.web-integration.info/cs/blog/automatizace-frontendovych-ukonu-cast-1/
+http://www.web-integration.info/cs/blog/automatizace-frontendovych-ukonu-cast-2/
+http://techportal.inviqa.com/2014/01/29/manage-project-dependencies-with-bower-and-composer/
+https://doc.nette.org/cs/2.3/composer
+
+
+GULP
+------
+https://pla.nette.org/cs/grunt-a-usemin
+https://forum.nette.org/cs/24253-yeoman-generator-pro-nette-projekty
+https://github.com/davidkudera/Example-Frontend/blob/master/gulpfile.js#L66-L74
